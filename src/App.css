@@ -1,42 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #212529;
+  font-family: 'Nunito', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  padding: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-container {
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+.google-sign-in {
+  border: none;
+  border-radius: 8px;
+  padding: 9px 10px 9px 39px;
+  background: rgba(255, 255, 255, 0.9) url("src/assets/img/google-icon-32.png") no-repeat 10px center/23px;
+  transition-duration: 250ms;
 }
 
-.read-the-docs {
-  color: #888;
+.google-sign-in:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.logout-btn {
+  border: 1px solid #EC7063;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background-color: transparent;
+  color: #ec7063;
+  transition-duration: 250ms;
+}
+
+.logout-btn:hover {
+  background-color: #ec7063;
+  color: rgba(0, 0, 0, 0.9);
 }
